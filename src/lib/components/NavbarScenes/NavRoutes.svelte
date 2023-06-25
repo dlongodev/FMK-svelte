@@ -10,10 +10,10 @@
 			title: 'Menu',
 			href: '/menu'
 		},
-		{
-			title: 'Services',
-			href: '/services'
-		},
+		// {
+		// 	title: 'Services',
+		// 	href: '/services'
+		// },
 		{
 			title: 'Contact',
 			href: '/contact'

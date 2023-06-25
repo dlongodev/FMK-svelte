@@ -1,4 +1,4 @@
-<div id="hero" class="bg-surface-backdrop-token pt-24 xl:pt-16">
+<div id="hero" class="bg-surface-400 pt-24 xl:pt-16">
 	<div class="mx-auto max-w-7xl px-4 py-16">
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-10 items-center">
 			<div class="flex flex-col items-center xl:items-start text-center xl:text-left space-y-4">
@@ -38,7 +38,7 @@
 </div>
 
 <style>
-	@keyframes floating {
+	/* @keyframes floating {
 		0% {
 			transform: translateY(0);
 		}
@@ -52,6 +52,5 @@
 	.anim-float-element1 {
 		animation: floating 14s ease-in-out infinite;
 		animation-delay: 3s;
-	}
-	/* border-2 border-rose-500 */
+	} */
 </style>
