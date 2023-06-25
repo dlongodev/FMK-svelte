@@ -4,22 +4,18 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
-	import Navigation from '$lib/components/fmk-nav/Navigation.svelte';
-	import HomeNav from '$lib/components/fmk-nav/HomeNav.svelte';
-
-	let isMobileNavigation: boolean = false;
-	const mobilNavigation = () => (isMobileNavigation = true);
+	import NavRoutes from '$lib/components/NavbarScenes/NavRoutes.svelte';
+	import Navbar from '$lib/components/NavbarScenes/Navbar.svelte';
 </script>
 
 <Drawer>
-	<Navigation {mobilNavigation} />
+	<NavRoutes />
 </Drawer>
-
 <!-- App Shell -->
 <AppShell>
 	<!-- Navigation Bar -->
 	<svelte:fragment slot="pageHeader">
-		<HomeNav />
+		<Navbar />
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />

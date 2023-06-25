@@ -1,5 +1,5 @@
 <div id="hero" class="bg-surface-backdrop-token pt-24 xl:pt-16">
-	<div class="section-container">
+	<div class="mx-auto max-w-7xl px-4 py-16">
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-10 items-center">
 			<div class="flex flex-col items-center xl:items-start text-center xl:text-left space-y-4">
 				<h1 class="font-bold !text-4xl md:!text-6xl max-w-[600px]">
@@ -38,13 +38,6 @@
 </div>
 
 <style>
-	.section-container {
-		margin-right: auto;
-		margin-left: auto;
-		max-width: 80rem;
-		padding: 4rem 1rem;
-	}
-
 	@keyframes floating {
 		0% {
 			transform: translateY(0);
@@ -61,5 +54,4 @@
 		animation-delay: 3s;
 	}
 	/* border-2 border-rose-500 */
-
 </style>

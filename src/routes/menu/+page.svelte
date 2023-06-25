@@ -1,1 +1,1 @@
-<h1>MENU PAGE</h1>
+<h1 class="text-xl">MENU</h1>
