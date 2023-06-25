@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { AppBar, drawerStore, type DrawerSettings } from '@skeletonlabs/skeleton';
-	import Logo from '../Assets/Logo.svelte';
 	import Navigation from './NavRoutes.svelte';
 	import { page } from '$app/stores';
+	import Logo from '$lib/assets/Logo.svelte';
 
 	const drawerSettings: DrawerSettings = {
 		id: 'responsive-nav',
