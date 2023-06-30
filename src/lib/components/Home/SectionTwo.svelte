@@ -22,7 +22,7 @@
 </script>
 
 <section class="bg-primary-500 py-20 px-4 sm:px-8 md:px-16">
-	<div class="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-4xl">
+	<div class="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl">
 		<!-- card -->
 		{#each cardContent as { title, image, description }}
 			<div class="card card-hover hover:bg-surface-300 py-2">

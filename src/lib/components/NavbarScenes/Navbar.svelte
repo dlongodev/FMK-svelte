@@ -36,15 +36,18 @@
 				<i class="fas fa-bars" />
 			</button>
 		</svelte:fragment>
-		<a href="/" class="absolute lg:hidden -translate-y-1/4 -translate-x-1/2">
+		<a href="/" class="absolute lg:hidden -translate-y-[30%] -translate-x-1/2">
 			<Logo className={`${routeId === '/' ? 'w-48 top-full ' : 'w-24 top-[45%]'} fill-token`} />
 		</a>
 		<svelte:fragment slot="trail">
 			<div class="hidden lg:block">
 				<Navigation />
 			</div>
-			<div class="hidden md:block px-8">
-				<a class="font-semibold btn variant-ringed-primary text-primary-800" href="/menu">
+			<div class="hidden md:block pl-8">
+				<a
+					class="font-semibold btn variant-ghost-surface border-2 border-primary-700 text-primary-800"
+					href="/menu"
+				>
 					Place an Order
 				</a>
 			</div>

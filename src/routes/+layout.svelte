@@ -22,3 +22,23 @@
 	<!-- Page Footer -->
 	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
 </AppShell>
+<div class="noise-overlay" />
+
+<style>
+	.noise-overlay {
+		background-image: url('/images/noisy-texture.png');
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 5000;
+		width: 100%;
+		height: 100%;
+		background-repeat: repeat;
+		background-position: 0 0;
+		background-size: 250px 250px;
+		opacity: 0.4;
+		pointer-events: none;
+	}
+</style>
