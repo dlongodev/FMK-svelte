@@ -6,6 +6,7 @@
 	import { AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
 	import NavRoutes from '$lib/components/NavbarScenes/NavRoutes.svelte';
 	import Navbar from '$lib/components/NavbarScenes/Navbar.svelte';
+	import LayoutFooter from '$lib/components/footer/LayoutFooter.svelte';
 </script>
 
 <Drawer>
@@ -20,7 +21,7 @@
 	<!-- Page Route Content -->
 	<slot />
 	<!-- Page Footer -->
-	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
+	<svelte:fragment slot="pageFooter"><LayoutFooter /></svelte:fragment>
 </AppShell>
 <div class="noise-overlay" />
 
