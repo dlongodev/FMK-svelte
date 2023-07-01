@@ -20,7 +20,7 @@
 	$: routeId = $page.route.id;
 </script>
 
-<nav class="w-[100%] bg-surface-400">
+<nav class={`${routeId !== '/' && 'shadow-lg'} w-[100%] bg-surface-400`}>
 	<AppBar
 		background="bg-surface-400"
 		gridColumns="grid-cols-3 items-start"

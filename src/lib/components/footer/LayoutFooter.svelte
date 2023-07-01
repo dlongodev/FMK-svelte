@@ -41,7 +41,7 @@
 </script>
 
 <div class="bg-primary-500 py-8">
-	<div class="flex flex-col md:flex-row items-center justify-between md:mx-auto max-w-5xl">
+	<div class="flex flex-col md:flex-row items-center justify-between mx-auto max-w-5xl">
 		<div class="opacity-60">
 			<Logo className="w-40 ml-4 fill-on-primary-token" />
 		</div>
@@ -79,7 +79,7 @@
 </div>
 <div class="bg-primary-700 py-8">
 	<div
-		class="flex flex-col md:flex-row items-center justify-between md:mx-auto max-w-xl text-primary-300 text-xs uppercase"
+		class="flex flex-col gap-2 md:flex-row items-center justify-between mx-auto max-w-xl text-primary-300 text-xs uppercase"
 	>
 		<span>Copyright © {copyrightYear}</span>
 		<span>Family Meal Kitchen, LLC</span>
