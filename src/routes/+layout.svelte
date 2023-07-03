@@ -7,10 +7,18 @@
 	import NavRoutes from '$lib/components/NavbarScenes/NavRoutes.svelte';
 	import Navbar from '$lib/components/NavbarScenes/Navbar.svelte';
 	import LayoutFooter from '$lib/components/footer/LayoutFooter.svelte';
+	import Seo from '$lib/components/Home/Seo.svelte';
+	import CartDrawer from '$lib/components/cart/CartDrawer.svelte';
 </script>
 
+<Seo />
+
 <Drawer>
-	<NavRoutes />
+	{#if $drawerStore.id === 'responsive-nav'}
+		<NavRoutes />
+	{:else}
+		<CartDrawer />
+	{/if}
 </Drawer>
 <!-- App Shell -->
 <AppShell>

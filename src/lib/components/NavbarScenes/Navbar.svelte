@@ -3,6 +3,7 @@
 	import Navigation from './NavRoutes.svelte';
 	import { page } from '$app/stores';
 	import Logo from '$lib/assets/Logo.svelte';
+	import NavShoppingCart from './NavShoppingCart.svelte';
 
 	const drawerSettings: DrawerSettings = {
 		id: 'responsive-nav',
@@ -17,10 +18,10 @@
 	}
 
 	// reactive variable to apply special styles to logo when switching route
-	$: routeId = $page.route.id;
+	$: logoSize = $page.url.pathname;
 </script>
 
-<nav class={`${routeId !== '/' && 'shadow-lg'} w-[100%] bg-surface-400`}>
+<nav class={`${logoSize !== '/' && 'shadow-lg'} w-[100%] bg-surface-400`}>
 	<AppBar
 		background="bg-surface-400"
 		gridColumns="grid-cols-3 items-start"
@@ -30,26 +31,27 @@
 	>
 		<svelte:fragment slot="lead">
 			<a href="/" class="hidden lg:block absolute top-0 left-2">
-				<Logo className={`${routeId === '/' ? 'w-48' : 'w-24 ml-4 lg:static'} fill-token`} />
+				<Logo className={`${logoSize === '/' ? 'w-48' : 'w-24 ml-4 lg:static'} fill-token`} />
 			</a>
 			<button type="button" on:click={drawerOpen} class="lg:hidden btn-icon variant-filled-primary">
 				<i class="fas fa-bars" />
 			</button>
 		</svelte:fragment>
 		<a href="/" class="absolute lg:hidden -translate-y-[30%] -translate-x-1/2">
-			<Logo className={`${routeId === '/' ? 'w-48 top-full ' : 'w-24 top-[45%]'} fill-token`} />
+			<Logo className={`${logoSize === '/' ? 'w-48 top-full ' : 'w-24 top-[45%]'} fill-token`} />
 		</a>
 		<svelte:fragment slot="trail">
 			<div class="hidden lg:block">
 				<Navigation />
 			</div>
-			<div class="hidden md:block pl-8">
+			<div class="flex items-center pl-8">
 				<a
-					class="font-semibold btn variant-ghost-surface border-2 border-primary-700 text-primary-800"
+					class="hidden md:block font-semibold btn variant-ghost-surface border-2 border-primary-700 text-primary-800"
 					href="/menu"
 				>
 					Place an Order
 				</a>
+				<NavShoppingCart />
 			</div>
 		</svelte:fragment>
 	</AppBar>

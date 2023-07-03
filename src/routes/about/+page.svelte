@@ -1,15 +1,15 @@
-<div class="max-w-5xl mx-auto px-4 sm:px-8 md:px-16 py-16">
+<div class="max-w-5xl mx-auto px-5 sm:px-8 md:px-16 py-16">
 	<h1 class="text-2xl md:text-3xl font-bold text-primary-500 text-center mb-6">About us</h1>
 	<h2 class="text-2xl md:text-2xl mb-6 text-center">Meet Chef Joe Longo</h2>
 	<div class="grid md:grid-cols-3 gap-8">
 		<div class="md:col-span-1">
 			<img
-				class="m-3 rounded-md shadow-lg"
+				class="m-1 rounded-md shadow-lg"
 				src="/images/chef/Chef-Joe-Longo.jpg"
 				alt="Chef Joe Longo Headshot"
 			/>
 		</div>
-		<p class="md:col-span-2 ml-4 leading-loose mb-2">
+		<p class="md:col-span-2 md:ml-4 leading-loose mb-2">
 			<span class="font-semibold text-primary-500"> “To be of service” </span>has been the lifelong
 			mantra for Executive Chef Joseph Longo. This coupled with a tremendous work ethic, passion for
 			one’s craft, and his never ending commitment to excellence has propelled Chef Longo’s 38 year
