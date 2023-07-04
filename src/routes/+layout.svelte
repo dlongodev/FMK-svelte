@@ -4,10 +4,10 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, Drawer, drawerStore } from '@skeletonlabs/skeleton';
-	import NavRoutes from '$lib/components/NavbarScenes/NavRoutes.svelte';
-	import Navbar from '$lib/components/NavbarScenes/Navbar.svelte';
+	import NavRoutes from '$lib/components/navbar/NavRoutes.svelte';
+	import Navbar from '$lib/components/navbar/Navbar.svelte';
 	import LayoutFooter from '$lib/components/footer/LayoutFooter.svelte';
-	import Seo from '$lib/components/Home/Seo.svelte';
+	import Seo from '$lib/components/home/Seo.svelte';
 	import CartDrawer from '$lib/components/cart/CartDrawer.svelte';
 </script>
 
