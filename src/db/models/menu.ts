@@ -1,6 +1,6 @@
 import {Schema, model, models } from "mongoose";
 
-interface IMenu {
+export interface IMenu {
   title: string;
   desc?: string;
   price: number;
