@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "62674d1de616d45f4e36cd67",
+        "title": "Poultry",
+        "slug": "poultry",
+        "order": 1,
+        "__v": 0
+    },
+    {
+        "_id": "62674d43e616d45f4e36cd6f",
+        "title": "Beef and Pork",
+        "slug": "beef",
+        "order": 2,
+        "__v": 0
+    },
+    {
+        "_id": "62674d8ae616d45f4e36cd79",
+        "title": "Pasta and More",
+        "slug": "pasta",
+        "order": 3,
+        "__v": 0
+    },
+    {
+        "_id": "62674da9e616d45f4e36cd7e",
+        "title": "Simple Salads",
+        "slug": "salad",
+        "order": 4,
+        "__v": 0
+    },
+    {
+        "_id": "62674dcfe616d45f4e36cd83",
+        "title": "By the Quart & More",
+        "slug": "quart",
+        "order": 6,
+        "__v": 0
+    },
+    {
+        "_id": "64220bbaa44eb6d0896c0fc2",
+        "title": "Family Size Sides",
+        "slug": "sides",
+        "order": 5,
+        "__v": 0
+    }
+]

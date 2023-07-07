@@ -1,0 +1,194 @@
+[
+    {
+        "_id": "623f4267b69d36ba039e7642",
+        "title": "Mama's Meatballs",
+        "desc": "Freshly Ground Beef Meatballs, Slow Cooked in San Marzano Tomato Sauce",
+        "price": 55,
+        "category": "beef",
+        "__v": 0
+    },
+    {
+        "_id": "62451e81ca4dbc6e469707bb",
+        "title": "Chicken Parmesan",
+        "desc": "Tender Chicken Scallopini, Light Italian Breadcrumb, Pan Seared in EVOO, topped with San Marzano Tomato Sauce, Locatelli, Mozzarella - 12 pcs",
+        "price": 60,
+        "category": "poultry",
+        "__v": 0
+    },
+    {
+        "_id": "6245b7557b69698ecdd9072c",
+        "title": "Chicken Francese",
+        "desc": "Tender Chicken Breast Medallions, Pan Seared, Light Egg Batter, Lemon, Shallots, Heirloom Cherry Tomatoes, Spinach, Chardonnay, Chicken Broth, Italian Parsley - 12 pcs",
+        "price": 60,
+        "category": "poultry",
+        "__v": 0
+    },
+    {
+        "_id": "62645d424d3657cb081aea14",
+        "title": "Sweet or Hot Italian Sausage Peppers and Onions ",
+        "desc": "Rich All Ground Beef Meat Sauce, slow-cooked,  with fresh herbs, garlic, onions, red wine, and San Marzano tomatoes, served over al dente cooked rigatoni pasta (1.5lbs of pasta per pan)",
+        "price": 55,
+        "category": "beef",
+        "__v": 0
+    },
+    {
+        "_id": "62656c5e9135ff9de030a712",
+        "title": "Chicken Milanese Bruschetta",
+        "desc": "Pan Seared Chicken Scallopini, Light Italian Breadcrumb, Chopped Tomato and Red Onion Salad with Basil and Red Wine Vinaigrette - 12 pcs",
+        "price": 60,
+        "category": "poultry",
+        "__v": 0
+    },
+    {
+        "_id": "6266a6b29641e836388367a8",
+        "title": "\"D’Best\" Eggplant Parm ",
+        "desc": "Sliced Thin, Light Italian Breadcrumbs, Pan Seared, and Triple Layered with San Marzano, Locatelli, Mozzarella, Fresh Italian Parsley",
+        "price": 50,
+        "category": "pasta",
+        "__v": 0
+    },
+    {
+        "_id": "6266b0c6c904cab56182336e",
+        "title": "Mama’s Marinara Sauce",
+        "desc": " ",
+        "price": 20,
+        "category": "quart",
+        "__v": 0
+    },
+    {
+        "_id": "6417743a3b96276599aa8c03",
+        "title": "Mulberry Street Chopped",
+        "desc": "Mixed Greens, Genoa Salami, Fresh Mozzarella, Roasted Red Peppers, Croutons, Chickpeas, Heirloom Cherry Tomatoes, Cucumbers, Red Onions, Kalamata Olives, House Made Red Wine Vinaigrette ",
+        "price": 30,
+        "category": "salad",
+        "__v": 0
+    },
+    {
+        "_id": "64220950a44eb6d0896c0f8a",
+        "title": "Chicken Marsala",
+        "desc": "Pan Seared Chicken Medallions, Shallots, Mushrooms, Fresh Herbs, Heirloom Cherry Tomatoes, Spinach, Marsala Sauce - 12 pcs",
+        "price": 60,
+        "category": "poultry",
+        "__v": 0
+    },
+    {
+        "_id": "64220973a44eb6d0896c0f8f",
+        "title": "Sicilian Lemon Roasted Chicken",
+        "desc": "Two Whole Roasted Chicken Cut Into 8pieces, Garlic, Shallots, Lemon,White Wine, Chicken Broth, Fresh Herbs",
+        "price": 65,
+        "category": "poultry",
+        "__v": 0
+    },
+    {
+        "_id": "6422098ba44eb6d0896c0f94",
+        "title": "“Jersey Style” Chicken Scarpiello ",
+        "desc": "Two Whole Roasted Chicken Cut Into 8pieces, Peppers, Onions, Potatoes, Hot Italian Sausage, Hot Cherry Peppers, Fresh Herbs, Aged Balsamic, Roasted   Chicken Broth",
+        "price": 65,
+        "category": "poultry",
+        "__v": 0
+    },
+    {
+        "_id": "642209a6a44eb6d0896c0f99",
+        "title": "Chicken Wings Balsamico",
+        "desc": "Garlic, Fresh Herbs, EVOO, Lemon, White Wine, Balsamic Reduction, Caramelized Onions, Cherry Peppers, Crumbled Gorgonzola ",
+        "price": 60,
+        "category": "poultry",
+        "__v": 0
+    },
+    {
+        "_id": "64220c3da44eb6d0896c0fd6",
+        "title": "House Made Lasagna from Scratch",
+        "desc": "Old School Italian Style Lasagna with Seasoned Ricotta, San Marzano Sauce, Locatelli, and Mozzarella, Baked till Golden. ",
+        "price": 65,
+        "category": "pasta",
+        "__v": 0
+    },
+    {
+        "_id": "64220c57a44eb6d0896c0fdb",
+        "title": "House Made Manicotti from Scratch",
+        "desc": "Italian Style Crepes Filled with Seasoned Ricotta, Topped with San Marzano, Locatelli, Mozzarella and Baked till Golden",
+        "price": 65,
+        "category": "pasta",
+        "__v": 0
+    },
+    {
+        "_id": "64220c6ba44eb6d0896c0fe0",
+        "title": "Rigatoni Bolognese",
+        "desc": "Slow Cooked Beef Savory Meat Sauce",
+        "price": 55,
+        "category": "pasta",
+        "__v": 0
+    },
+    {
+        "_id": "64220c88a44eb6d0896c0fe5",
+        "title": "Three Cheese Baked Ziti",
+        "desc": "Layered with Fontina, Locatelli, and Ricotta",
+        "price": 55,
+        "category": "pasta",
+        "__v": 0
+    },
+    {
+        "_id": "64220c9fa44eb6d0896c0fea",
+        "title": "Spicy Rigatoni alla Vodka",
+        "desc": "Spicy San Marzano, Spiked with Vodka, Touch of Cream, Crushed Red Pepper",
+        "price": 55,
+        "category": "pasta",
+        "__v": 0
+    },
+    {
+        "_id": "64220cc5a44eb6d0896c0ff0",
+        "title": "Simple Spagetti with Garlic & Extra Virgin Olive Oil",
+        "desc": " ",
+        "price": 40,
+        "category": "pasta",
+        "__v": 0
+    },
+    {
+        "_id": "64220d2aa44eb6d0896c0ff6",
+        "title": "Simple Pasta Marinara",
+        "desc": " ",
+        "price": 40,
+        "category": "pasta",
+        "__v": 0
+    },
+    {
+        "_id": "64220da2a44eb6d0896c1005",
+        "title": "House Caesar",
+        "desc": "Hearts of Romaine, our Dressing, Homemade Croutons, Shaved Locatelli,White Anchovies ",
+        "price": 25,
+        "category": "salad",
+        "__v": 0
+    },
+    {
+        "_id": "64220ffea44eb6d0896c102c",
+        "title": "Bolognese Sauce",
+        "desc": " ",
+        "price": 25,
+        "category": "quart",
+        "__v": 0
+    },
+    {
+        "_id": "6422102ba44eb6d0896c1036",
+        "title": "Chef Joe’s Famous Red Wine Vinaigrette",
+        "desc": " ",
+        "price": 20,
+        "category": "quart",
+        "__v": 0
+    },
+    {
+        "_id": "64221072a44eb6d0896c103d",
+        "title": "Broccoli with Garlic, EVOO, and CrushedRed Peppers",
+        "desc": " ",
+        "price": 20,
+        "category": "sides",
+        "__v": 0
+    },
+    {
+        "_id": "64221089a44eb6d0896c1042",
+        "title": "Rosemary Roasted Potatoes",
+        "desc": " ",
+        "price": 20,
+        "category": "sides",
+        "__v": 0
+    }
+]
