@@ -12,7 +12,7 @@
 				Order by the Pan Menu
 			</h2>
 			<p class="leading-loose mb-2">
-				Our pans are designed to serve 6 to 8 people, ensuring plentiful portions for everyone. For smaller gatherings, half pans are also available upon request. We offer complimentary delivery throughout Martin County, while deliveries to Palm Beach and St. Lucie Counties require a minimum order of $100. To ensure timely delivery, <span class="text-primary-500 italic font-semibold">we kindly request that orders be placed at least one day in advance</span>. Should you have any special requests or inquiries, please don't hesitate to reach out to us at <span class="font-semibold text-primary-500">754-264-6268</span>. 
+				Our pans are designed to serve 6 to 8 people, ensuring plentiful portions for everyone. For smaller gatherings, half pans are also available upon request. We offer complimentary delivery throughout Martin County, while deliveries to Palm Beach and St. Lucie Counties require a minimum order of $100. To ensure timely delivery, we kindly request that orders be placed at least <span class="text-primary-500 italic font-semibold">one day in advance</span>. Should you have any special requests or inquiries, please don't hesitate to reach out to us at <span class="font-semibold text-primary-500">754-264-6268</span>. 
 			</p>
 		</section>
 		<img class="mx-auto min-w-[720px] overflow-hidden" src="/images/pans/pans-header.png" alt="" />
