@@ -20,12 +20,18 @@
 				<div class="border border-primary-500 m-2">
 					{#each categories as category}
 					<section class="p-4">
-						<h2 class="bg-primary-500 text-surface-50 p-4 text-center uppercase text-xl font-semibold">{category.title}</h2>
+						<h2 class="bg-primary-500 text-surface-50 p-4 text-center uppercase text-xl font-semibold mb-1">{category.title}</h2>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
 						{#each menu as item}
-						{#if item.category === category.slug}
-						<p>{item.title}</p>
-						{/if}
-						{/each}
+							{#if item.category === category.slug}
+							<article class="p-4 mb-2 transition-all hover:scale-[1.02] hover:bg-surface-50 hover:shadow-md focus:outline">
+								<h3 class="p-1 font-semibold text-primary-600">{item.title} <span class="pl-4 text-primary-900">${item.price}</span></h3>
+								<p class="p-1 mb-4 text-sm italic">{item.desc}</p>
+								<button class="btn variant-filled-primary">Add to Cart</button>
+							</article>
+							{/if}
+							{/each}
+						</div>
 					</section>
 					{/each}
 				</div>
