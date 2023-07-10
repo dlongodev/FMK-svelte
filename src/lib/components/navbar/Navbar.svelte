@@ -37,8 +37,8 @@
 				<i class="fas fa-bars" />
 			</button>
 		</svelte:fragment>
-		<a href="/" class="absolute -translate-x-1/2 -translate-y-1/2 lg:hidden">
-			<Logo className={`${logoSize === '/' ? 'w-48 top-full ' : 'w-24 top-[45%]'} fill-token`} />
+		<a href="/" class="absolute -translate-x-1/2 lg:hidden">
+			<Logo className={`${logoSize === '/' ? 'w-48 top-full -translate-y-1/4 ' : 'w-24 -translate-y-1/2'} fill-token`} />
 		</a>
 		<svelte:fragment slot="trail">
 			<div class="hidden lg:block">
