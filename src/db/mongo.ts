@@ -1,11 +1,11 @@
-import {MongoClient} from 'mongodb';
-import { MONGO_URL } from '$env/static/private'; 
+import { MongoClient } from 'mongodb';
+import { MONGO_URL, DB_NAME } from '$env/static/private';
 
-const client = new MongoClient(MONGO_URL)
+const client = new MongoClient(MONGO_URL);
 
-export function dbConnect() {
+export async function dbConnect() {
 	console.log('Starting MongDB...');
-	return client.connect();
+	return await client.connect();
 }
 
-export default client.db()
+export default client.db(DB_NAME);
