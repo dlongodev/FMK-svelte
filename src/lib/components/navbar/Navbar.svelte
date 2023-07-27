@@ -24,21 +24,21 @@
 <nav class={`${logoSize !== '/' && 'shadow-lg'} w-[100%] bg-surface-400`}>
 	<AppBar
 		background="bg-surface-400"
-		gridColumns="grid-cols-3 items-start"
+		gridColumns="grid-cols-3 items-start h-16"
 		slotDefault="place-self-center"
 		slotTrail="place-content-end"
-		class="relative mx-auto max-w-7xl min-h-[6rem]"
+		class="relative mx-auto max-w-7xl"
 	>
 		<svelte:fragment slot="lead">
-			<a href="/" class="hidden lg:block absolute top-0 left-2">
+			<a href="/" class="absolute left-2 top-0 hidden lg:block">
 				<Logo className={`${logoSize === '/' ? 'w-48' : 'w-24 ml-4 lg:static'} fill-token`} />
 			</a>
-			<button type="button" on:click={drawerOpen} class="lg:hidden btn-icon variant-filled-primary">
+			<button type="button" on:click={drawerOpen} class="btn-icon variant-filled-primary lg:hidden">
 				<i class="fas fa-bars" />
 			</button>
 		</svelte:fragment>
-		<a href="/" class="absolute lg:hidden -translate-y-[30%] -translate-x-1/2">
-			<Logo className={`${logoSize === '/' ? 'w-48 top-full ' : 'w-24 top-[45%]'} fill-token`} />
+		<a href="/" class="absolute -translate-x-1/2 lg:hidden">
+			<Logo className={`${logoSize === '/' ? 'w-48 top-full -translate-y-1/4 ' : 'w-24 -translate-y-1/2'} fill-token`} />
 		</a>
 		<svelte:fragment slot="trail">
 			<div class="hidden lg:block">
@@ -46,7 +46,7 @@
 			</div>
 			<div class="flex items-center pl-8">
 				<a
-					class="hidden md:block font-semibold btn variant-ghost-surface border-2 border-primary-700 text-primary-800"
+					class="btn variant-ghost-surface hidden border-2 border-primary-700 font-semibold text-primary-800 md:block"
 					href="/menu"
 				>
 					Place an Order

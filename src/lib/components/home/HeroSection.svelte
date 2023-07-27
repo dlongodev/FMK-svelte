@@ -1,5 +1,5 @@
 <div id="hero" class="bg-surface-400 pt-24 xl:pt-16">
-	<div class="mx-auto max-w-7xl px-4 py-16">
+	<div class="mx-auto max-w-7xl px-4 py-8 md:py-16">
 		<div class="grid grid-cols-1 items-center gap-4 md:gap-10 xl:grid-cols-2">
 			<div class="flex flex-col items-center space-y-4 text-center xl:items-start xl:text-left">
 				<h1 class="max-w-[600px] !text-4xl font-bold md:!text-6xl">
