@@ -31,7 +31,7 @@
 <ul class="mt-20 lg:mt-0 z-[10] flex flex-col lg:flex-row uppercase text-lg">
 	{#each navLinks as { title, href }}
 		<li class="p-4 lg:p-0 hover:bg-primary-400 lg:hover:bg-transparent">
-			<a
+			<a  data-sveltekit-preload-data 
 				class="px-8 pb-1 lg:hover:border-b-8 lg:hover:border-primary-500 lg:hover:transition-all"
 				on:click={drawerClose}
 				{href}>{title}</a
