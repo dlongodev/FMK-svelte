@@ -1,5 +1,4 @@
 import * as z from 'zod';
-import db from '$db/mongo';
 
 const category_schema = z.object({
 	_id: z.string(),
@@ -9,4 +8,3 @@ const category_schema = z.object({
 });
 
 export type Category = z.infer<typeof category_schema>;
-export const Categories = db.collection<Category>('categories');
