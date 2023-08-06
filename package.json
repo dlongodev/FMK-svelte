@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && npm run package",
+		"build": "vite build",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
@@ -53,6 +53,7 @@
 	"type": "module",
 	"dependencies": {
 		"mongodb": "^5.7.0",
-		"zod": "^3.21.4"
+		"zod": "^3.21.4",
+		"zod-form-data": "^2.0.1"
 	}
 }
