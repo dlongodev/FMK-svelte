@@ -1,4 +1,8 @@
 <script lang="ts">
+	import type { ActionData } from './$types';
+	import { enhance } from '$app/forms';
+
+	export let form: ActionData;
 </script>
 
 <div class="h-full bg-surface-300">
@@ -24,20 +28,53 @@
 				>
 					Request a Quote or More Information
 				</h2>
-				<div class="mx-auto grid max-w-xl grid-cols-4 gap-4">
-					<!-- fields -->
-					<label class="label col-span-4">
-						<span class="ml-2">Full Name</span>
-						<input class="input" name="customer" type="text" />
-					</label>
-					<label class="label col-span-4">
-						<span class="ml-2">Email</span>
-						<input class="input" name="email" type="text" />
-					</label>
-					<label class="label col-span-4 md:col-span-3">
-						<span class="ml-2">Phone Number</span>
-						<input class="input" name="phone" type="text" />
-					</label>
+				<form method="POST" class="mx-auto grid max-w-xl grid-cols-4 gap-4" use:enhance>
+					<div class=" col-span-4">
+						<label class="label flex flex-col">
+							<span class="ml-2">Full Name *</span>
+							<input
+								class={form?.errors?.customer ? 'input-error' : 'input'}
+								name="customer"
+								type="text"
+								value={form?.data?.customer ?? ''}
+							/>
+						</label>
+						{#if form?.errors?.customer}
+							<p class="ml-2 text-xs italic text-error-500">{form?.errors?.customer[0]}</p>
+						{/if}
+					</div>
+					<div class="col-span-4">
+						<label class="label flex flex-col">
+							<span class="ml-2">Email *</span>
+							<input
+								class={form?.errors?.email ? 'input-error' : 'input'}
+								name="email"
+								type="text"
+								value={form?.data?.email ?? ''}
+							/>
+						</label>
+						{#if form?.errors?.email}
+							<p class="ml-2 text-xs italic text-error-600">
+								{form?.errors?.email[0]}
+							</p>
+						{/if}
+					</div>
+					<div class="col-span-4 md:col-span-3">
+						<label class="label flex flex-col" for="phone">
+							<span class="ml-2">Phone Number *</span>
+							<input
+								class={form?.errors?.phone ? 'input-error' : 'input'}
+								name="phone"
+								type="tel"
+								value={form?.data?.phone ?? ''}
+							/>
+						</label>
+						{#if form?.errors?.phone}
+							<p class="ml-2 text-xs italic text-error-600">
+								{form?.errors?.phone[0]}
+							</p>
+						{/if}
+					</div>
 					<label class="label col-span-4 md:col-span-2">
 						<span class="ml-2">Event Location</span>
 						<input
@@ -45,25 +82,35 @@
 							name="eventLocation"
 							type="text"
 							placeholder="Venue name or city, state"
+							value={form?.data?.eventLocation ?? ''}
 						/>
 					</label>
+
 					<label class="label col-span-4 md:col-span-2">
 						<span class="ml-2">Event Type</span>
-						<select class="select" name="eventType" placeholder="Select Option">
-							<option value="Wedding">Corporate</option>
-							<option value="Wedding">Private</option>
-							<option value="Wedding">Wedding</option>
-							<option value="Wedding">Other</option>
-						</select>
+						<input
+							class="select"
+							name="eventType"
+							placeholder="Birthday, Dinner Party..."
+							value={form?.data?.eventType ?? ''}
+						/>
 					</label>
+
 					<label class="label col-span-4 md:col-span-2">
 						<span class="ml-2">Event Date</span>
-						<input class="input" name="eventDate" type="date" />
+						<input class="input" name="eventDate" type="date" value={form?.data?.eventDate ?? ''} />
 					</label>
+
 					<label class="label col-span-4 md:col-span-2">
-						<span class="ml-2">Approximate guest count</span>
-						<input class="input" name="guestCount" type="number" />
+						<span class="ml-2">Approximate Guest Count</span>
+						<input
+							class="input"
+							name="guestCount"
+							type="number"
+							value={form?.data?.guestCount ?? ''}
+						/>
 					</label>
+
 					<label class="label col-span-4">
 						<span class="ml-2">Tell us about your event</span>
 						<textarea
@@ -71,9 +118,15 @@
 							name="about"
 							rows="5"
 							placeholder="Any special details you would like to share about your event"
-						/>
+							>{form?.data?.about ?? ''}</textarea
+						>
 					</label>
-				</div>
+
+					<button type="submit" class="btn variant-filled-primary col-span-4 mb-4 font-semibold">
+						<span>Send Message</span>
+						<span><i class="fa-solid fa-paper-plane" /></span>
+					</button>
+				</form>
 			</section>
 		</div>
 	</div>
