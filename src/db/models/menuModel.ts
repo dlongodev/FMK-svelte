@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { ObjectId } from 'mongodb';
 
 const menuSchema = z.object({
-	_id: z.instanceof(ObjectId),
+	_id: z.instanceof(ObjectId).optional(),
 	title: z.string(),
 	desc: z.string().optional(),
 	price: z.number(),
